@@ -1,0 +1,113 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #333333;
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+}
+
+.header {
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #feeae3;
+  letter-spacing: 0.5px;
+  color: #2d3152;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* span是inline element，沒有width&height可調整，唯一的辦法就是把它轉變成block元素(或inline-block)*/
+span {
+  display: inline-block;
+}
+
+.controlPanel {
+  margin: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 17px 22px 28px -5px rgba(161, 159, 161, 1);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.label_R {
+  background-color: #ff0000;
+  padding: 5px;
+}
+
+.label_RValue {
+  background-color: #ff0000;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+}
+
+.label_G {
+  background-color: #00ff00;
+  padding: 5px;
+}
+
+.label_GValue {
+  background-color: #00ff00;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+}
+
+.label_B {
+  background-color: #0000ff;
+  padding: 5px;
+}
+
+.label_BValue {
+  background-color: #0000ff;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+}
+
+.singleSlider {
+  margin: 25px 5px;
+}
+
+/* 將滑輪長度拉長(fr. W3C School) */
+input[type="range"] {
+  width: 200px;
+}
+
+.hexPanel {
+  margin-left: 20px;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+}
+
+.HexIndex {
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.showHexPanel {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: rgb(128, 128, 128);
+}
